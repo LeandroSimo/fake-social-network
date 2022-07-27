@@ -8,7 +8,7 @@ import 'package:mobx/mobx.dart';
 
 class PostsPage extends StatefulWidget {
   final String title;
-  const PostsPage({Key? key, this.title = 'Esig Social'}) : super(key: key);
+  const PostsPage({Key? key, this.title = 'Social Network'}) : super(key: key);
   @override
   PostsPageState createState() => PostsPageState();
 }
@@ -32,10 +32,8 @@ class PostsPageState extends State<PostsPage> {
         automaticallyImplyLeading: false,
         title: Row(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(right: 130),
-              child: Text(widget.title),
-            ),
+            Text(widget.title),
+            const Spacer(),
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.add_box_outlined),

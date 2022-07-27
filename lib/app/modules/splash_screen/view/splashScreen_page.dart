@@ -30,7 +30,7 @@ class SplashScreenPageState extends State<SplashScreenPage> {
           children: const [
             Center(
               child: Text(
-                'ESIG SOCIAL',
+                'SOCIAL NETWORK',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
